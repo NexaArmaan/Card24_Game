@@ -16,22 +16,22 @@
       <children>
          <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="FInd a Solution" />
          <TextField fx:id="solutionField" layoutX="20.0" layoutY="20.0" />
-         <Button mnemonicParsing="false" text="Refresh" />
+         <Button mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
       <children>
-         <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
-         <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
-         <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
-         <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fx:id="card1" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fx:id="card2" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fx:id="card3" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fx:id="card4" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
       <children>
          <Label text="Enter an Expression: " />
          <TextField fx:id="expressionField" />
-         <Button mnemonicParsing="false" text="Verify" />
+         <Button mnemonicParsing="false" onAction="#handleVerify" text="Verify" />
       </children>
    </HBox>
 </VBox>
