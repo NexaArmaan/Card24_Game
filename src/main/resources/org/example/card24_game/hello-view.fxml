@@ -8,15 +8,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="391.0" prefWidth="437.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="org.example.card24_game.HelloController">
+<VBox alignment="CENTER" prefHeight="391.0" prefWidth="437.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.card24_game.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
       <children>
-         <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="27.0" prefWidth="130.0" text="FInd a Solution" />
+         <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="27.0" prefWidth="115.0" text="FInd a Solution" />
          <TextField fx:id="solutionField" layoutX="20.0" layoutY="20.0" />
-         <Button mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+         <Button mnemonicParsing="false" text="Refresh" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
@@ -31,7 +31,7 @@
       <children>
          <Label text="Enter an Expression: " />
          <TextField fx:id="expressionField" />
-         <Button mnemonicParsing="false" onAction="#handleVerify" text="Verify" />
+         <Button mnemonicParsing="false" text="Verify" />
       </children>
    </HBox>
 </VBox>
